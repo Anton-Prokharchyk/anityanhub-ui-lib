@@ -1,19 +1,17 @@
-@use '@/app/variables' as palette;
-
 .text-area {
   display: block;
   padding: 20px;
-  color: palette.$typography-disabled-color;
-  border: 2px solid palette.$typography-disabled-color;
+  color: var(--typography-disabled-color);
+  border: 2px solid var(--typography-disabled-color);
   border-radius: 5px;
 
   &::placeholder {
-    color: palette.$typography-primary-color; // TODO: change color to disabled
+    color: var(--typography-primary-color); // TODO: change color to disabled
   }
 
   &:focus {
-    color: palette.$typography-primary-color;
-    border-color: palette.$bg-accent-color;
+    color: var(--typography-primary-color);
+    border-color: var(--bg-accent-color);
     outline: none;
   }
 }

@@ -1,5 +1,3 @@
-@use '@/app/variables.scss' as palette;
-
 .error-message {
-  color: palette.$typography-error-color;
+  color: var(--typography-error-color);
 }

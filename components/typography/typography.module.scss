@@ -1,19 +1,17 @@
-@use '@/app/variables.scss' as palette;
-
 .primary {
-  color: palette.$typography-primary-color;
+  color: var(--typography-primary-color);
 }
 
 .accent {
-  color: palette.$typography-accent-color;
+  color: var(--typography-accent-color);
 }
 
 .error {
-  color: palette.$typography-error-color;
+  color: var(--typography-error-color);
 }
 
 .disabled {
-  color: palette.$typography-disabled-color;
+  color: var(--typography-disabled-color);
 }
 
 .normal {
