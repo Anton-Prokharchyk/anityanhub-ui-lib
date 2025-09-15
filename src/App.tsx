@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Button,
   Input,
@@ -7,24 +7,24 @@ import {
   Textarea,
   Slider,
   ErrorMessage,
-} from "../components";
+} from '../components';
 
 function App() {
   return (
-    <div style={{ padding: "20px" }}>
-      <Typography variant="h1">AnityaHub UI Library Test</Typography>
+    <div style={{ padding: '20px' }}>
+      <Typography variant='h1'>AnityaHub UI Library Test</Typography>
       <br />
-      <Button appearance="primary">Primary Button</Button>
+      <Button appearance='primary'>Primary Button</Button>
       <br />
-      <Button appearance="dark">Dark Button</Button>
+      <Button appearance='dark'>Dark Button</Button>
       <br />
-      <Button appearance="bordered">Bordered Button</Button>
+      <Button appearance='bordered'>Bordered Button</Button>
       <br />
-      <Input placeholder="Input field" />
+      <Input placeholder='Input field' />
       <br />
-      <SearchBar placeholder="Search..." />
+      {/* <SearchBar placeholder="Search..." /> */}
       <br />
-      <Textarea placeholder="Textarea" />
+      <Textarea placeholder='Textarea' />
       <br />
       <Slider min={0} max={100} />
       <br />
