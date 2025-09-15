@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 
 import { SearchBarProps } from '@/components/search-bar/search-bar.proptypes';
-import SearchIcon from '@/components/search-bar/search-icon.svg';
+import SearchIcon from '@/components/search-bar/search-icon.svg?react';
 
 import styles from './search-bar.module.scss';
 
