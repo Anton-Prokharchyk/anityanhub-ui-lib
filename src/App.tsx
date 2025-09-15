@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <div style={{ padding: '20px' }}>
-      <Typography variant='h1'>AnityaHub UI Library Test</Typography>
+      <Typography variant='h1'>Anityanhub UI Library Test</Typography>
       <br />
       <Button appearance='primary'>Primary Button</Button>
       <br />
@@ -22,7 +22,7 @@ function App() {
       <br />
       <Input placeholder='Input field' />
       <br />
-      {/* <SearchBar placeholder="Search..." /> */}
+      <SearchBar placeholder='Search...' />
       <br />
       <Textarea placeholder='Textarea' />
       <br />
