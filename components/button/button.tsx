@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { ButtonProps } from '@/components/button/button.proptypes';
 
-import styles from './button.module.scss';
+import styles from '@/components/button/button.module.scss';
 
 export default function Button({
   children,
