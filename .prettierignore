@@ -1,0 +1,9 @@
+.next
+public
+**/dist
+**/coverage
+**/.vscode
+**/.nyc_output
+**/.github
+**/node_modules
+**/idea
