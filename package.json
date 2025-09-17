@@ -9,7 +9,8 @@
   "exports": {
     ".": {
       "import": "./dist/anityanhub-ui-lib.mjs",
-      "require": "./dist/anityanhub-ui-lib.js"
+      "require": "./dist/anityanhub-ui-lib.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
