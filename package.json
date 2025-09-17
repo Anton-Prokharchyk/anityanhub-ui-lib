@@ -2,9 +2,13 @@
   "name": "anityanhub-ui-lib",
   "version": "1.0.0",
   "description": "anityanhub ui library",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/anityanhub-ui-lib.js",
+  "module": "dist/anityanhub-ui-lib.mjs.js",
   "types": "dist/index.d.ts",
+  "styles": "dist/style.css",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -49,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anton-Prokharchyk/anityanhub-ui-lib.git"
+    "url": "https://github.com/Anton-Prokharchyk/anityanhub-ui-lib.git"
   },
   "author": "antony666",
   "license": "ISC",

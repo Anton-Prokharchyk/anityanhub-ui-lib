@@ -34,7 +34,7 @@ export default defineConfig(() => {
     build: {
       lib: {
         sourcemap: true,
-        entry: './components/index.ts',
+        entry: './lib/components/index.ts',
         outDir: './dist',
         name: 'Anityanhub-ui-lib',
         formats: ['es', 'cjs', 'umd'],
