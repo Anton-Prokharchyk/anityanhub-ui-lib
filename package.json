@@ -1,11 +1,17 @@
 {
   "name": "anityanhub-ui-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "anityanhub ui library",
   "main": "dist/anityanhub-ui-lib.js",
-  "module": "dist/anityanhub-ui-lib.mjs.js",
+  "module": "dist/anityanhub-ui-lib.mjs",
   "types": "dist/index.d.ts",
   "styles": "dist/style.css",
+  "exports": {
+    ".": {
+      "import": "./dist/anityanhub-ui-lib.mjs",
+      "require": "./dist/anityanhub-ui-lib.js"
+    }
+  },
   "files": [
     "dist"
   ],
