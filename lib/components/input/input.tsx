@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { InputProps } from '@/components/input/input.proptypes';
 
-import styles from './input.module.scss';
+import styles from '@/components/input/input.module.scss';
 
 export default function Input({
   placeholder,

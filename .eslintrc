@@ -3,7 +3,7 @@
   "env": {
     "node": true,
     "browser": true,
-    "es6": true
+    "es6": true,
   },
   "plugins": [
     "@typescript-eslint",
@@ -11,7 +11,7 @@
     "prettier",
     "jsx-a11y",
     "react",
-    "react-hooks"
+    "react-hooks",
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -19,8 +19,8 @@
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
-      "tsx": true
-    }
+      "tsx": true,
+    },
   },
   "extends": [
     "next/core-web-vitals",
@@ -34,7 +34,7 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
@@ -43,25 +43,21 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": true
-      }
+        "devDependencies": true,
+      },
     ],
+    "import/extensions": "warn",
     "react/button-has-type": "warn",
     "jsx-a11y/click-events-have-key-events": "warn",
     "jsx-a11y/no-static-element-interactions": "warn",
     "react/no-array-index-key": "warn",
-    "react/self-closing-comp": "off"
+    "react/self-closing-comp": "off",
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      }
-    }
-  }
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
+  },
 }
