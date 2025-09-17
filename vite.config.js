@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import dts from 'vite-plugin-dts';
+import path from 'path';
 
 export default defineConfig(() => {
   return {
@@ -16,7 +17,7 @@ export default defineConfig(() => {
     ],
     resolve: {
       alias: {
-        '@': __dirname,
+        '@': path.resolve(__dirname, 'lib'),
       },
     },
     server: {

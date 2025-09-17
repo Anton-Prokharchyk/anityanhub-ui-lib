@@ -7,7 +7,7 @@ import {
   Textarea,
   Slider,
   ErrorMessage,
-} from '../components';
+} from '../lib/components';
 
 function App() {
   return (
