@@ -5,6 +5,12 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint --fix \"{**/*,*}.{css,scss}\" && eslint . --cache --fix"
+  },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
@@ -40,12 +46,6 @@
     "vite": "^5.0.0",
     "vite-plugin-dts": "^3.0.0",
     "vite-plugin-svgr": "^4.5.0"
-  },
-  "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint --fix \"{**/*,*}.{css,scss}\" && eslint . --cache --fix"
   },
   "repository": {
     "type": "git",
