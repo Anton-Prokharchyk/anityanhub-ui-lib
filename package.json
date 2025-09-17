@@ -17,16 +17,19 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint --fix \"{**/*,*}.{css,scss}\" && eslint . --cache --fix"
+    "build": "vite build",
+    "test": "echo \"TESTS\"",
+    "lint": "stylelint --fix \"{**/*,*}.{css,scss}\" && eslint . --cache --fix",
+    "prepare": "husky"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
@@ -43,6 +46,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.1.7",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
