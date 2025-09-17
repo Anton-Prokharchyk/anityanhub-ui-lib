@@ -15,7 +15,7 @@ import calcNextScrollShift from '@/components/slider/calcNextButtonShift';
 import calcPrevScrollShift from '@/components/slider/calcPrevButtonShift';
 import getNumberFromPixels from '@/components/slider/getNumberFromPixels';
 
-import styles from './slider.module.scss';
+import styles from '@/components/slider/slider.module.scss';
 
 const ENTER_KEY_NAME = 'Enter';
 

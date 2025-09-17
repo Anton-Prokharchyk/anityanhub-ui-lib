@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { SearchBarProps } from '@/components/search-bar/search-bar.proptypes';
 import SearchIcon from '@/components/search-bar/search-icon.svg?react';
 
-import styles from './search-bar.module.scss';
+import styles from '@/components/search-bar/search-bar.module.scss';
 
 export default function SearchBar({
   placeholder,

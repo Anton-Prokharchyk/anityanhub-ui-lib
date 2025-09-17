@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { TypographyProps } from '@/components/typography/typography.proptypes';
 
-import styles from './typography.module.scss';
+import styles from '@/components/typography/typography.module.scss';
 
 export default function Typography({
   children,
