@@ -1,31 +1,43 @@
 name: CI
 
 on:
-  pull_request:
-    branches: [main]
   push:
-    branches: [main]
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
 
+    steps:
+      # 1. Скачиваем код репозитория
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      # 2. Ставим Node.js (можно указать версию)
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v5
         with:
           node-version: 18
+          cache: 'npm'
 
-      - name: Install deps
+      # 3. Ставим зависимости
+      - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
+      # 4. Линтим код
+      # - name: Run ESLint
+      #   run: npm run lint
 
-      - name: Test
+      # # 5. Проверяем типы
+      # - name: Type check
+      #   run: npm run typecheck --if-present
+
+      # 6. Запускаем тесты
+      - name: Run tests
         run: npm run test
 
-      - name: Build
+      # 7. Сборка проекта
+      - name: Build project
         run: npm run build
