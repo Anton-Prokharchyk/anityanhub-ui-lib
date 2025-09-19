@@ -1,4 +1,4 @@
-import '../theme/theme.module.scss';
+import '../theme/theme.scss';
 
 export { default as Button } from './button/button';
 export { default as Typography } from './typography/typography';
