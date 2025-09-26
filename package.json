@@ -1,6 +1,6 @@
 {
   "name": "anityanhub-ui-lib",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "anityanhub ui library",
   "main": "dist/anityanhub-ui-lib.js",
   "module": "dist/anityanhub-ui-lib.mjs",
