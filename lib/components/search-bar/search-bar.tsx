@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactElement, FocusEvent } from 'react';
 import cn from 'classnames';
 
 import { SearchBarProps } from '@/components/search-bar/search-bar.proptypes';
@@ -10,14 +10,14 @@ export default function SearchBar({
   placeholder,
   className,
   ...props
-}: SearchBarProps): React.ReactElement {
+}: SearchBarProps): ReactElement {
   const classes = cn(styles.input);
 
-  const searchBarFocusEventHandler = (e: React.FocusEvent<HTMLDivElement>) => {
+  const searchBarFocusEventHandler = (e: FocusEvent<HTMLDivElement>) => {
     e.currentTarget.children[1].classList.add(styles.focused);
     e.currentTarget.classList.add(styles.focused);
   };
-  const searchBarOnBlurEventHandler = (e: React.FocusEvent<HTMLDivElement>) => {
+  const searchBarOnBlurEventHandler = (e: FocusEvent<HTMLDivElement>) => {
     e.currentTarget.children[1].classList.remove(styles.focused);
     e.currentTarget.classList.remove(styles.focused);
   };

@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactElement } from 'react';
 import cn from 'classnames';
 
 import { ButtonProps } from '@/components/button/button.proptypes';
@@ -10,7 +10,7 @@ export default function Button({
   appearance = 'primary',
   className,
   ...props
-}: ButtonProps): React.ReactElement {
+}: ButtonProps): ReactElement {
   const classes = cn(styles.btn, className, {
     [styles.primary]: appearance === 'primary',
     [styles.dark]: appearance === 'dark',

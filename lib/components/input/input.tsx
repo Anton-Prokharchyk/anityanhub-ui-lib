@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactElement } from 'react';
 import cn from 'classnames';
 
 import { InputProps } from '@/components/input/input.proptypes';
@@ -11,7 +11,7 @@ export default function Input({
   appearance,
   error = false,
   ...props
-}: InputProps): React.ReactElement {
+}: InputProps): ReactElement {
   const classes = cn(styles.input, { [styles.error]: error });
   return (
     <input

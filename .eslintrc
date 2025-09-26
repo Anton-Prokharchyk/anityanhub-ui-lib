@@ -40,6 +40,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
     "react/jsx-props-no-spreading": "warn",
     "import/prefer-default-export": "warn",
+    "react/react-in-jsx-scope": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {

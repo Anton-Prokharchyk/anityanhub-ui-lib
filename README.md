@@ -20,7 +20,6 @@ Import and use components.
 <sub>App.ts</sub>
 
 ```
-import React from 'react';
 import {
   Button,
   Input,

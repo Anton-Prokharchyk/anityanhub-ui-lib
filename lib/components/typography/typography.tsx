@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactElement } from 'react';
 import cn from 'classnames';
 
 import { TypographyProps } from '@/components/typography/typography.proptypes';
@@ -12,7 +12,7 @@ export default function Typography({
   weight = 'normal',
   // TODO: add fontSize property
   ...props
-}: TypographyProps): React.ReactElement {
+}: TypographyProps): ReactElement {
   const classes = cn({
     [styles.primary]: color === 'primary',
     [styles.accent]: color === 'accent',

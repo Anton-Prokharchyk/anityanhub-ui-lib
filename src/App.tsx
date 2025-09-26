@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Button,
   Input,
@@ -26,7 +25,11 @@ function App() {
       <br />
       <Textarea placeholder='Textarea' />
       <br />
-      <Slider min={0} max={100} />
+      <Slider type='mini'>
+        <div
+          style={{ width: '100px', height: '100px', backgroundColor: 'red' }}
+        ></div>
+      </Slider>
       <br />
       <ErrorMessage>Error message</ErrorMessage>
     </div>

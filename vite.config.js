@@ -31,6 +31,9 @@ export default defineConfig(() => {
       },
     },
     root: './',
+    optimizeDeps: {
+      exclude: ['react', 'react-dom', 'react/jsx-runtime', 'classnames'],
+    },
     build: {
       lib: {
         sourcemap: true,
@@ -38,13 +41,15 @@ export default defineConfig(() => {
         outDir: './dist',
         name: 'Anityanhub-ui-lib',
         formats: ['es', 'cjs', 'umd'],
-        rollupOptions: {
-          external: ['react', 'react-dom'],
-          output: {
-            globals: {
-              react: 'React',
-              'react-dom': 'ReactDOM',
-            },
+      },
+      rollupOptions: {
+        external: ['react', 'react-dom', 'react/jsx-runtime', 'classnames'],
+        output: {
+          globals: {
+            react: 'React',
+            'react-dom': 'ReactDOM',
+            'react/jsx-runtime': 'jsxRuntime',
+            classnames: 'classNames',
           },
         },
       },
